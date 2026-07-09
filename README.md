@@ -1,22 +1,44 @@
-# AutoHotkey 工具集
+# 🛠️ AutoHotkey 工具集
 
-## 系统要求
-- Windows 操作系统
-- [AutoHotkey v2.x](https://www.autohotkey.com/) 或更高版本
+[![GitHub release](https://img.shields.io/github/v/release/user-A100/Hotkey)](https://github.com/user-A100/Hotkey/releases)
+[![GitHub stars](https://img.shields.io/github/stars/user-A100/Hotkey)](https://github.com/user-A100/Hotkey/stargazers)
 
-## 安装步骤
+一套实用的 AutoHotkey 脚本工具，帮助你提高 Windows 操作效率。
 
-### 1. 安装AutoHotkey
-- 访问 https://www.autohotkey.com/
-- 点击 **Download**
-- 下载安装程序并运行
-- 按照默认设置完成安装
+---
 
-### 2. 使用脚本
-- 下载本仓库的 `.ahk` 文件
-- 双击运行即可
-- 或右键选择 "Run Script"
+## 📦 包含工具
 
-## 工具列表
-- hide:双击桌面隐藏桌面图标
-- close:双击enter（左右均可）实现息屏
+| 工具 | 文件 | 快捷键 | 功能说明 |
+|------|------|--------|----------|
+| **快速隐藏桌面** | `hide.ahk` | `Win + H` | 一键隐藏/显示所有桌面图标和任务栏 |
+| **快速息屏** | `close.ahk` | `Win + S` | 一键关闭显示器，移动鼠标或按任意键唤醒 |
+
+---
+
+## 🚀 快速开始
+
+### 方法一：安装AutoHotkey后运行脚本（推荐）
+
+1. **安装 AutoHotkey**
+   - 运行本仓库中的 `AutoHotkey_2.0.26_setup.exe`
+   - 或从官网下载：https://www.autohotkey.com/
+
+2. **运行脚本**
+   - 双击 `hide.ahk` 或 `close.ahk` 即可运行
+   - 脚本会驻留在系统托盘（右下角）
+
+3. **使用快捷键**
+   - `Win + H`：隐藏/显示桌面
+   - `Win + S`：息屏
+
+### 方法二：编译成EXE（无需安装AutoHotkey）
+
+如果想在没有安装AutoHotkey的电脑上使用，可以编译成EXE文件：
+
+```bash
+# 编译 hide.ahk
+"C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "hide.ahk" /out "hide.exe"
+
+# 编译 close.ahk
+"C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "close.ahk" /out "close.exe"
